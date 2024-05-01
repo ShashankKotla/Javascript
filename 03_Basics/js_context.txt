@@ -1,0 +1,89 @@
+Execution contexts:
+1. Global Execution context
+2. Function Execution context
+3. Eval Execution Context.
+
+Basic Notes:-
+1. The global execution context, global environment, and the global scope are related concepts but have some distinctions.
+2. The global execution context represents the overall environment where your code runs.
+3. The global environment is a part of this, containing global variables and functions. 
+4. The global scope refers to the visibility of variables and functions throughout your entire code.
+Note: Being "out of scope" generally means a variable or function is not accessible in a particular part of your code.
+
+/**************** Execution ****************/
+
+[{}] => when Js file runs,then 2-phases were created 1. Memory Creation phase, 2.Execution phase
+
+
+/********* Sample Code ******************/
+let val1 = 10; //line-1
+let val2 = 5; //line-2
+function addNum(num1, num2) { //line-3
+    let total = num1 + num2; //line-4
+    return total //line-5
+} //line-6
+let result1 = addNum(val1 + val2) //line-7
+let result2 = addNum(10,2) //line-8
+
+
+Steps:-
+1.Global Execution Context :
+NOTE: Global Execution context & Global environment one other the same.
+Firstly, Global EC will created then it refers to "--this--" variable, where Global EC will be stored.
+Example: In Browser, It will windows Object. And for different environment like node, bun, deno the global object will be different.
+
+2.Memory Creation Phase (MCP): 
+we call this step as cycle-one.In this MCP, memory allocation wll be done.
+* val1 -> undefined
+* val2 -> undefined
+* addNum -> defination(overall scope functionality)
+* result1 -> undefined
+* result2 -> undefined
+
+3.Execution Phase:
+Hint: it's not targeting only line-7, it's targeting (taking) from addNum function scope
+            addNum(num1, num2) { 
+                let total = num1 + num2; 
+                return total 
+            }
+let result1 = addNum(val1 + val2) //line-7
+We call this step-3 as cycle-two. Here the calculation will be done.
+* num1 <=> val1 -> 10
+* num2 <=> val2 -> 5
+
+Note: Here the function, can't be in-this becoz overall stored in MCP.
+
+* addNum ---->[{New-Variable environment + Execution Thread}], box will be created.
+Note: No.of Types of functions executes === No.of Boxex will be created(new variable environment + execution thread)
+
+    addNum ---->[{New-Variable environment + Execution Thread}] -Box => Again same 2 phases will be created as before.
+        1.Memory Phase =>(num1) val1-> undefined, (num2) val2-> undefined, total -> undefined
+        2.Execution Context => num1->10, num2 ->15, total -> 15 (total value be returned to GEC)
+
+//similarlly, line-8 
+
+Extra-source-For-Reading:
+Link: https://developer.mozilla.org/en-US/docs/Glossary/Thread
+
+
+************************ call-stack *****************************
+
+: LIFO- Last In First out
+
+check in source>snippts
+
+function one() {
+    console.log("One")
+}
+function two() {
+    console.log("Two")
+}
+function two() {
+    console.log("Three")
+}
+
+
+one()
+two()
+three()
+
