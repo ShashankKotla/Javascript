@@ -41,3 +41,64 @@ $ sign, is not very common in js. but professional programmers often use it as a
 //     console.log(car);
 // }
 
+
+// Arthematic
+// let x = 5
+// let y = 5
+// console.log(x + y);
+// console.log(x - y);
+// console.log(x / y);
+// console.log(x % y);
+// console.log(x * y);
+// console.log(x ** y);
+
+//Comparison
+// let x = 5;
+// let y = 5;
+// console.log(x == y);
+// console.log(x != y);
+// console.log(x >= y);
+// console.log(x <= y);
+// console.log(x > y);
+// console.log(x < y);
+// console.log(x === y);
+
+// let result = x >= y ? "X is greater" : "x is not greater";
+// console.log(result);
+// Ternary
+// syntax : variablename = (condition) ? value1:value2
+// let x = 5 > 5 ? "5 is greater than 5" : "Does not make any sence";
+// console.log(x);
+// age = 15;
+// let voteable = (age < 18) ? "Too Young": "Old enough";
+// console.log(voteable);
+
+// let text1 = "What a very ";
+// text1 += "nice day";
+// console.log(text1);
+
+//Logical Operators ," used to determine the logic b/w variables or values. "
+// let x = 13;
+// let y = 12;
+// console.log(x <=10 && y >1);
+// console.log(x <=10 || y >1);
+// console.log(!(x==y));
+
+
+// When we compare with str with number. JS converts str to a number.
+// console.log(`type: ${(typeof '6'), (typeof 5)} : ${'6'>5}`);
+// console.log(`type: ${(typeof '6'), (typeof '5')} : ${'6'>'5'}`);
+// console.log(`type: ${(typeof 6), (typeof '5')} : ${6<'5'}`); 
+
+// console.log(`type: ${(typeof 'John'), (typeof 'John')} : ${"John" > "John"}`);
+
+// console.log(2<12);
+// console.log(2<'12');
+// console.log(2<'John');
+// console.log(2>'John');
+// console.log(2=="John");
+// console.log('2' == 'John');
+// console.log('2'<'12');
+// console.log('2'>'12');
+// console.log("2" == "12");
+
