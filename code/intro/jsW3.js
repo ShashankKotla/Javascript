@@ -42,6 +42,18 @@ $ sign, is not very common in js. but professional programmers often use it as a
 // }
 
 
+// Types of JavaScript Operators
+// There are different types of JavaScript operators:
+
+// Arithmetic Operators
+// Assignment Operators
+// Comparison Operators
+// String Operators
+// Logical Operators
+// Bitwise Operators
+// Ternary Operators
+// Type Operators
+
 // Arthematic
 // let x = 5
 // let y = 5
@@ -198,10 +210,10 @@ const d = new Date();
 
 // JavaScript Bitwise Operators
 //Bitwise operators work on 32 bit numbers.
-console.log(5 & 1); //& works on comparing each digit-> 0101 & 0001, here 1 matched both sides.
-console.log(5 | 1); //it is opposite ofo &
-console.log(~5); //~(Bitwise Not) -> inverts all bits 0101 to 1010 which is 6
-console.log(5 ^ 1);  //0101 ^ 0001 -> 0100
-console.log(5 << 1); //5x2 or we can say shift 1 bit to left 0101 to 1010 ->10
-console.log(5 >> 1); //0101 -> 0010 which is 2
-console.log(5 >>> 1); //unsigned right shift (it behaves same as signed right shift).
+// console.log(5 & 1); //& works on comparing each digit-> 0101 & 0001, here 1 matched both sides.
+// console.log(5 | 1); //it is opposite of &
+// console.log(~5); //~(Bitwise Not) -> inverts all bits 0101 to 1010 which is 6
+// console.log(5 ^ 1);  //0101 ^ 0001 -> 0100
+// console.log(5 << 1); //5x2 or we can say shift 1 bit to left 0101 to 1010 ->10 (Left shift by 1 bit: 0101 << 1 = 1010.)
+// console.log(5 >> 1); //0101 -> 0010 which is 2 (Right shift by 1 bit: 0101 >> 1 = 0010.)
+// console.log(5 >>> 1); //unsigned right shift (it behaves same as signed right shift).
