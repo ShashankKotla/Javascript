@@ -2,7 +2,7 @@
 
 // function dt() {
 //     const length = 16;
-//     const weight = 7.5;
+//     const weight = 7;
 //     const color = 'Yellow';
 //     const lastName = "Johnson";
     
