@@ -46,14 +46,13 @@
 // Using JSON.stringify(), can be converted to a string with JSON method.
 // It inclued in JS and supported in all major browsers
 
-// const person = {
-//     name: 'john',
-//     age:30,
-//     city: "New York",
-//     country: "United States"
-// }
+const person = {
+    name: 'john',
+    age:30,
+    city: "New York",
+    country: "United States"
+}
 
-// let myString = JSON.stringify(person);
+let myString = JSON.stringify(person);
 
-// document.getElementById('obj').innerHTML=myString;
-
+document.getElementById('obj').innerHTML=myString;
