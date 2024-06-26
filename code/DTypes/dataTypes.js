@@ -5,15 +5,16 @@
 //     const weight = 7;
 //     const color = 'Yellow';
 //     const lastName = "Johnson";
-    
-//     const htmlContent = `
-//         <p>Length: ${length}</p>
-//         <p>Weight: ${weight}</p>
-//         <p>Color: ${color}</p>
-//         <p>Last Name: ${lastName}</p>
-//     `;
 
-//     document.getElementById('dt').innerHTML=htmlContent;
+    
+    // const htmlContent = `
+    //     <p>Length: ${length}</p>
+    //     <p>Weight: ${weight}</p>
+    //     <p>Color: ${color}</p>
+    //     <p>Last Name: ${lastName}</p>
+    // `;
+
+    // document.getElementById('dt').innerHTML=length;
 // }
 // dt()
 
