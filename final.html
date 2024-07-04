@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final JS</title>
+</head>
+<body>
+    <!-- <script src="finial_turn.js"></script> -->
+    <script>
+        function sayHelloInFiveSeconds(name){
+            var prompt = 'Hello,' + name + "!";
+            function inner(){
+                alert(prompt);
+            }
+            setTimeout(inner, 5000);
+        }
+        sayHelloInFiveSeconds('Adam')
+    </script>
+</body>
+</html>
