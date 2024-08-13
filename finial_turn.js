@@ -296,20 +296,20 @@ Inversily, a function can be assigned to the object and gain access to it throug
 // console.log(myObj.myOtherFunc()); //HI THERE! TOMAS
 
 //we can also specify context
-var myObj = {
-    myStr : "Hello World",
-    myFunc: function(){
-        return this.myStr
-    }
-}
-var anotherFunc = function(){
-    return this.myStr.toLowerCase();
-}
+// var myObj = {
+//     myStr : "Hello World",
+//     myFunc: function(){
+//         return this.myStr
+//     }
+// }
+// var anotherFunc = function(){
+//     return this.myStr.toLowerCase();
+// }
 
 
-var otherFunc = function(s) {
-    return this.myStr.toLowerCase() + s
-}
+// var otherFunc = function(s) {
+//     return this.myStr.toLowerCase() + s
+// }
 // // console.log(otherFunc.call(myObj, " And Hello Moon!"));
 // console.log(otherFunc.apply(myObj,[" And Hello Sun!"])); //'apply, It is identical but it takes an array for an argument.
 
@@ -322,4 +322,16 @@ var otherFunc = function(s) {
 // console.log(Math.max(42, 6, 27));
 // console.log(Math.min.apply(Math, [42, 6, 27]));
 
+
+// var product = function(a,b){ return a* b;};
+// var doubler = product.bind(this, 2);
+// console.log(doubler(8));
+
+/*
+Unlike most other popular object-oriented language, JavaScript has no concept of 'instance' created from 'class' blueprints; Instead, Javascript combines instantiation & inheritance into a single concept; a 'prototype'. 
+
+Every Javascript object has a 'prototype'. When you go to access a property on an object that doesn't exist on the actual object, the interpreter will look at it's prototype.
+
+Some JS implementations let you access an object's prototypes on the magic property called '__proto__' . While this is useful for explainig prototypes it's not part of the standard; we'll get to standard ways of using prototypes later.
+ */
 
